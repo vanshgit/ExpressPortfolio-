@@ -1,0 +1,33 @@
+<!-- contact.ejs , vansh , 4th june -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="/css/contact.css" />
+  </head>
+  <body>
+    <header><%- include('partials/navbar') %></header>
+
+    <main>
+      <h1>Contact Me</h1>
+
+      <div class="contact-info">
+        <p>Email: chugvansh902@gmail.com</p>
+        <p>Phone: +16479701003</p>
+        <p>Address: Blue Eagle Trail, Scarborough</p>
+      </div>
+
+      <form class="contact-form" action="/submit" method="POST">
+        <input type="text" name="firstName" placeholder="First Name" />
+        <input type="text" name="lastName" placeholder="Last Name" />
+        <input type="tel" name="contactNumber" placeholder="Contact Number" />
+        <input type="email" name="email" placeholder="Email Address" />
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+
+    <footer><p>&copy; 2023 Vansh. All rights reserved.</p></footer>
+  </body>
+</html>
